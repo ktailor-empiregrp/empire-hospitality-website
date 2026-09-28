@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empire Hospitality Group — One Group. Multiple Brands. Endless Possibilities.</title>
+<meta name="description" content="Empire Hospitality Group unites culinary craft and fuel-driven convenience under one trusted standard — a modern hospitality and retail portfolio built for everyday excellence.">
+<meta name="theme-color" content="#1A1A2E">
+<meta property="og:title" content="Empire Hospitality Group — One Group. Multiple Brands. Endless Possibilities.">
+<meta property="og:description" content="A modern hospitality and retail portfolio spanning food & beverage and fuel & convenience retail.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/webp" sizes="32x32" href="assets/img/logo2.webp">
+<link rel="apple-touch-icon" href="assets/img/logo.webp">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="pre-grid" id="pre-grid"></div>
+  <div class="pre-label">Empire Hospitality Group</div>
+</div>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <nav>
+      <a href="#" class="logo">
+        <span class="logo-chip">
+          <img src="assets/img/logo.webp" alt="Empire Hospitality Group logo" class="logo-img" width="134" height="48" fetchpriority="high" decoding="async">
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#intro">Story</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#verticals">Verticals</a></li>
+        <li><a href="#presence">Presence</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Partner With Us</a>
+      <button class="burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-grid-lines"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-tag eyebrow">Food · Fuel — Unified</div>
+    <h1>
+      <span class="line"><span>One Group.</span></span>
+      <span class="line"><span class="accent">Multiple Brands.</span></span>
+      <span class="line"><span>Endless Possibilities.</span></span>
+    </h1>
+    <p class="hero-sub">Empire Hospitality Group unites culinary craft and fuel-driven convenience under a single standard of trust — a modern portfolio built for everyday excellence.</p>
+    <div class="hero-actions">
+      <a href="#verticals" class="btn-primary">Discover the Verticals →</a>
+      <a href="#brands" class="btn-ghost">View Our Brands</a>
+    </div>
+  </div>
+  
+  
+</section>
+
+<div class="marquee">
+  <div class="marquee-track" id="marqueeTrack">
+        <span>Food &amp; Beverage<i>✦</i></span>
+    <span>Fuel &amp; Retail<i>✦</i></span>
+    <span>One Group. Multiple Brands. Endless Possibilities.<i>✦</i></span>
+        <span>Food &amp; Beverage<i>✦</i></span>
+    <span>Fuel &amp; Retail<i>✦</i></span>
+    <span>One Group. Multiple Brands. Endless Possibilities.<i>✦</i></span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section id="intro" class="light section-pad">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="reveal">
+        <div class="eyebrow">Brand Introduction</div>
+        <h2 class="split-heading">A modern hospitality group, built on trust.</h2>
+      </div>
+      <div>
+        <p class="intro-copy reveal">Empire Hospitality Group is a modern hospitality and retail brand focused on delivering quality, convenience, and exceptional customer experiences. With a diverse portfolio spanning food &amp; beverage franchises, convenience retail, and service-driven partnerships, Empire represents innovation, reliability, and premium hospitality standards.</p>
+        <p class="intro-copy reveal">Built on strong partnerships and customer-focused values, we continue to create connected experiences that inspire growth, trust, and everyday excellence — across every touchpoint, in every market we serve.</p>
+        <div class="intro-stats reveal">
+          <div><div class="num">02</div><div class="lbl">Core Verticals</div></div>
+          <div><div class="num">100+</div><div class="lbl">Touchpoints</div></div>
+          <div><div class="num">01</div><div class="lbl">Unified Standard</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED BRANDS — scroll-tied reveal (no scroll-jacking / no pin) -->
+<section id="brands" class="brands-section section-pad">
+  <div class="brands-orb b1"></div>
+  <div class="brands-orb b2"></div>
+  <div class="brands-grid-lines"></div>
+  <div class="wrap">
+    <div class="brands-eyebrow-row reveal">
+      <div class="eyebrow brands-heading-eyebrow">Our Family, Serving Yours</div>
+      <h2 class="split-heading brands-heading-title">Our Trusted Brands</h2>
+    </div>
+
+    <div class="brands-stage" id="brandsStage">
+      <div class="brand-card" id="brand-subway" data-brand="subway">
+        <div class="brand-glow"></div>
+        <div class="brand-mark-box">
+          <img src="assets/img/subway.webp" alt="Subway" loading="lazy" decoding="async" fetchpriority="low">
+          <span class="brand-mark brand-fallback">SUBWAY<sup>&reg;</sup></span>
+        </div>
+        <span class="brand-sweep"></span>
+      </div>
+
+      <div class="brand-card" id="brand-dunkin" data-brand="dunkin">
+        <div class="brand-glow"></div>
+        <div class="brand-mark-box">
+          <img src="assets/img/dunkin.webp" alt="Dunkin'" loading="lazy" decoding="async" fetchpriority="low">
+          <span class="brand-mark brand-fallback">DUNKIN'<sup>&reg;</sup></span>
+        </div>
+        <span class="brand-sweep"></span>
+      </div>
+
+      <div class="brand-card" id="brand-empiremart" data-brand="empiremart">
+        <div class="brand-glow"></div>
+        <div class="brand-mark-box">
+          <img src="assets/img/empiremart.webp" alt="Empire Mart" loading="lazy" decoding="async" fetchpriority="low">
+          <span class="brand-mark brand-fallback">EMPIRE MART</span>
+        </div>
+        <span class="brand-sweep"></span>
+      </div>
+
+      <div class="brand-card" id="brand-qdoba" data-brand="qdoba">
+        <div class="brand-glow"></div>
+        <div class="brand-mark-box">
+          <img src="assets/img/qdoba.webp" alt="QDOBA" loading="lazy" decoding="async" fetchpriority="low">
+          <span class="brand-mark brand-fallback">QDOBA<sup>&reg;</sup></span>
+        </div>
+        <span class="brand-sweep"></span>
+      </div>
+</div>
+  </div>
+  
+</section>
+
+<!-- VERTICALS -->
+<section id="verticals" class="section-pad verticals-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Our Verticals</div>
+      <h2 class="split-heading verticals-title">One group, operating across two connected industries.</h2>
+    </div>
+    <div class="verticals-grid">
+<div class="v-card food reveal">
+        <div class="v-num">01</div>
+        <svg class="v-icon" viewBox="0 0 48 48" fill="none" stroke-width="1.4"><path d="M16 6v14a4 4 0 0 0 4 4v18M12 6v10M20 6v10M16 20V6"/><path d="M32 6c-4 0-6 5-6 11 0 5 2 8 6 8s6-3 6-8c0-6-2-11-6-11z"/><path d="M32 25v19"/></svg>
+        <h3>FOOD SERVICES</h3>
+        <p>A growing collection of food &amp; beverage franchises, crafted around consistency, warmth, and culinary care.</p>
+        <span class="v-tag">Food &amp; Beverage</span>
+      </div>
+      <div class="v-card fuel reveal">
+        <div class="v-num">02</div>
+        <svg class="v-icon" viewBox="0 0 48 48" fill="none" stroke-width="1.4"><rect x="10" y="8" width="18" height="32" rx="1"/><path d="M28 20h6a4 4 0 0 1 4 4v10a3 3 0 0 0 6 0V16l-6-6"/><line x1="14" y1="16" x2="24" y2="16"/></svg>
+        <h3>FUEL / GAS STATION</h3>
+        <p>Modern fuel stations and convenience retail, engineered for a clean, professional, roadside experience.</p>
+        <span class="v-tag">Fuel &amp; Retail</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values section-pad values-section">
+  <div class="orb values-orb values-orb-a"></div>
+  <div class="orb values-orb values-orb-b"></div>
+  <div class="wrap layered-wrap">
+    <div class="reveal">
+      <div class="eyebrow">What Holds Us Together</div>
+      <h2 class="split-heading values-title">Trust. Convenience. Care.</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-item reveal">
+        <div class="v-mark">01</div>
+        <h4>Trust</h4>
+        <p>Every partnership and every counter is held to the same standard — consistent, dependable, and transparent.</p>
+      </div>
+      <div class="value-item reveal">
+        <div class="v-mark">02</div>
+        <h4>Convenience</h4>
+        <p>From forecourt to franchise, we design experiences that fit seamlessly into everyday life.</p>
+      </div>
+      <div class="value-item reveal">
+        <div class="v-mark">03</div>
+        <h4>Care</h4>
+        <p>Hospitality is our foundation — customer-focused values guide every decision we make.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESENCE -->
+<section id="presence" class="presence section-pad presence-section">
+  <div class="orb presence-orb"></div>
+  <div class="wrap layered-wrap">
+    <div class="presence-top reveal">
+      <div>
+        <div class="eyebrow">Brand Presence</div>
+        <h2 class="split-heading">A consistent identity, everywhere Empire shows up.</h2>
+      </div>
+      <p>From roadside signage to social platforms, every touchpoint is built to deliver strong visibility while preserving elegance and consistency.</p>
+    </div>
+    <div class="stat-row">
+      <div class="stat-cell reveal"><div class="stat-num" data-count="100">0</div><div class="stat-lbl">Locations</div></div>
+      <div class="stat-cell reveal"><div class="stat-num" data-count="2">0</div><div class="stat-lbl">Core Verticals</div></div>
+      <div class="stat-cell reveal"><div class="stat-num" data-count="24">0</div><div class="stat-lbl">Hour Service</div></div>
+      <div class="stat-cell reveal"><div class="stat-num" data-count="200">0</div><div class="stat-lbl">K Community Reach</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MART SPOTLIGHT -->
+<section class="mart section-pad">
+  <div class="mart-media">
+    <img src="https://picsum.photos/seed/empiremart2026/1800/1200" class="duotone" alt="Empire Mart forecourt" loading="lazy" decoding="async" fetchpriority="low">
+  </div>
+  <div class="wrap">
+    <div class="mart-content reveal">
+      <div class="eyebrow">Empire Mart</div>
+      <h2 class="split-heading">Extraordinary details.<br>Exceptional experiences.</h2>
+      <p>A modern fuel station and convenience retail concept focused on premium customer experience, clean branding, and contemporary commercial design — a professional, recognisable roadside destination.</p>
+      <div class="mart-badges">
+        <span>Fuel</span><span>Retail</span><span>Quick Service</span><span>24/7</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="palette-strip">
+  <div class="palette-navy"></div>
+  <div class="palette-gold"></div>
+  <div class="palette-burgundy"></div>
+  <div class="palette-forest"></div>
+  <div class="palette-charcoal"></div>
+  <div class="palette-ivory"></div>
+</div>
+
+<!-- QUOTE -->
+<section class="quote">
+  <div class="wrap">
+    <blockquote class="reveal">"Built on strong partnerships and <b>customer-focused values</b> creating connected experiences that inspire growth, trust, and everyday excellence."</blockquote>
+    <cite>— Empire Hospitality Group</cite>
+  </div>
+</section>
+
+<!-- ABOUT / PLACEHOLDER CONTENT -->
+<!-- CTA -->
+<section id="contact" class="cta">
+  <div class="wrap cta-inner">
+    <h2 class="reveal split-heading">Let's build the next chapter of Empire, together.</h2>
+    <form class="cta-form reveal" onsubmit="event.preventDefault();">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Inquire →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-chip">
+          <img src="assets/img/logo.webp" alt="Empire Hospitality Group" class="logo-img" loading="lazy" decoding="async" fetchpriority="low">
+        </span>
+        <p>One Group. Multiple Brands. Endless Possibilities. A unified hospitality experience built on trust, convenience, and care.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="#intro">Story</a>
+        <a href="#verticals">Verticals</a>
+        <a href="#presence">Presence</a>
+      </div>
+      <div class="footer-col">
+        <h5>Verticals</h5>
+        <a href="#verticals">Empire Kitchen</a>
+        <a href="#verticals">Empire Mart</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="#contact">Partner With Us</a>
+        <a href="#contact">Press</a>
+        <a href="#contact">Careers</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Empire Hospitality Group. All rights reserved.</span>
+      <span>EMPIREHOSPITALITYGROUP.COM</span>
+    </div>
+  </div>
+</footer>
+
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script defer src="assets/js/script.js"></script>
+</body>
+</html>
